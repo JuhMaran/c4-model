@@ -256,7 +256,7 @@ Monitorar e auditar conversas de múltiplos números de WhatsApp de uma empresa.
 
 ### Visão inicial do sistema
 
-- ![Visão Inicial do Projeto](./images/001-visao-inicial-do-projeto.png)
+- ![Visão Inicial do Projeto](../images/001-visao-inicial-do-projeto.png)
 
 ### Funcionamento básico
 
