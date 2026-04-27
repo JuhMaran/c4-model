@@ -162,12 +162,91 @@ Exemplo:
 
 ![](./../images/002-context.png)
 
+### Interpretação da evolução
 
+Agora o sistema possui:
 
+* Controle de acesso
+* Separação de responsabilidades
+* Segurança adequada
+* Melhor alinhamento com requisitos legais
 
+## 6. Aprendizados da Camada de Contexto
 
+### Principais benefícios
 
+* Visão clara do sistema no ecossistema
+* Comunicação eficiente com qualquer público
+* Identificação precoce de riscos
+* Base sólida para próximas camadas
 
+### Erros comuns
 
+* Usar termos técnicos demais
+* Excesso de detalhes
+* Ignorar atores externos
+* Não descrever relacionamentos
 
+## 7. Resumo Estruturado
+
+### Elementos definidos
+
+#### Pessoas
+
+* Responsável pelo número telefônico
+* Administrador
+
+#### Sistemas
+
+* Sistema de Auditoria (principal)
+* WhatsApp (externo)
+* SSO / Keycloak (externo)
+
+#### Relacionamentos
+
+* Troca de mensagens
+* Leitura de QR Code
+* Consulta de mensagens
+* Gerenciamento de números
+* Autenticação / Autorização
+
+## Conclusão
+
+O nível de contexto é essencial porque:
+
+* Define o **ponto de partida da arquitetura**
+* Facilita a comunicação com **qualquer stakeholder**
+* Permite identificar problemas **antes do código existir**
+
+## Tabelas Resumo
+
+### Sistemas e Atores
+
+| Tipo            | Nome                               | Descrição                                          |
+|-----------------|------------------------------------|----------------------------------------------------|
+| Person          | Responsável pelo número telefônico | Profissional que utiliza o WhatsApp institucional  |
+| Person          | Administrador                      | Responsável pela gestão dos números monitorados    |
+| Software System | Sistema de Auditoria               | Sistema de vinculação e monitoramento de mensagens |
+| External System | WhatsApp                           | Sistema de mensagens instantâneas                  |
+| External System | SSO (Keycloak)                     | Sistema de autenticação e autorização              |
+
+### Relacionamentos
+
+| Origem                             | Destino              | Tipo de Interação | Descrição                                                 |
+|------------------------------------|----------------------|-------------------|-----------------------------------------------------------|
+| Responsável pelo número telefônico | WhatsApp             | Comunicação       | Trocar mensagens                                          |
+| Responsável pelo número telefônico | Sistema de Auditoria | Vinculação        | Efetua leitura do QR Code                                 |
+| Sistema de Auditoria               | WhatsApp             | Integração        | Consultar mensagens                                       |
+| Administrador                      | Sistema de Auditoria | Gestão            | Gerenciar números telefônicos (criar, atualizar, remover) |
+| Sistema de Auditoria               | SSO (Keycloak)       | Segurança         | Autenticação e autorização                                |
+
+### Leitura Rápida
+
+* **Atores principais:** Usuário operacional + Administrador
+* **Sistema central:** Sistema de Auditoria
+* **Dependências externas:** WhatsApp + SSO
+* **Foco dos relacionamentos:** Comunicação, vinculação, gestão e segurança.
+
+Essa tabela consolida a visão de contexto e serve como referência rápida para entendimento da arquitetura antes de
+avançar para os próximos níveis do C4 Model.
 
