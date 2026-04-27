@@ -38,9 +38,15 @@ A abstração em nível de contêiner é voltada para:
 * Equipe de suporte
 * Profissionais técnicos em geral
 
-👉 Diferente do nível de contexto, aqui a comunicação já é **mais técnica**.
+> Diferente do nível de contexto, aqui a comunicação já é **mais técnica**.
 
 ## 3. Escopo e Organização do Diagrama
+
+Antes de detalhar os containers, é importante entender o limite do sistema (boundary) que será explorado.
+
+A imagem abaixo representa o sistema ainda no nível de contexto, agora sendo preparado para o “zoom” interno:
+
+![Escopo](./../images/004-context.png)
 
 ### Elementos de Escopo
 
@@ -49,17 +55,20 @@ No nível de contêiner utilizamos:
 * **Software System (escopo principal)**
 * Containers internos ao sistema
 
-O sistema é representado por um **limite (boundary)**, e dentro dele colocamos os containers.
-
-![Escopo](./../images/004-context.png)
+O sistema é representado por um **retângulo tracejado (boundary)**, e é dentro dele que iremos decompor o software.
 
 ## 4. Construção da Arquitetura (Estudo de Caso)
 
 ### Sistema: Sistema de Auditoria
 
-A seguir, são apresentados os containers identificados e suas responsabilidades.
+A partir desse ponto, começamos a “explodir” o sistema em containers, identificando suas responsabilidades e
+tecnologias.
 
 ## 5. Containers Identificados
+
+A imagem abaixo apresenta a **visão geral da arquitetura em nível de contêiner**:
+
+![Container](../images/005-container.png)
 
 ### 5.1 Aplicação de Sincronização com WhatsApp
 
@@ -124,12 +133,12 @@ A escolha foi validada por meio de uma PoC (Prova de Conceito).
 
 ## 7. Autenticação e Segurança
 
-O sistema utiliza um serviço de autenticação (SSO):
+O sistema utiliza um mecanismo de autenticação (SSO):
 
-* Frontend obtém um **token**
-* Backend valida esse token antes de responder
+* O frontend obtém um **token de acesso**
+* O backend valida esse token antes de processar requisições
 
-#### Isso garante:
+#### Benefícios
 
 * Segurança
 * Controle de acesso
@@ -183,4 +192,4 @@ No nível de contêiner do C4 Model:
 * Os **relacionamentos** são explícitos
 * As **principais decisões técnicas são evidenciadas**
 
-![Container](../images/005-container.png)
+> A próxima evolução do C4 Model é a **camada de Componentes**, onde cada container será detalhado internamente.
