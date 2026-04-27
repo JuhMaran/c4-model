@@ -91,7 +91,7 @@ Sistema de Auditoria de mensagens do WhatsApp.
 
 ### Visualização do contexto inicial
 
-![](./../images/002-context-inicial.png)
+![](../images/002-context.png)
 
 ### Interpretação
 
@@ -160,7 +160,7 @@ Exemplo:
 
 ### Diagrama de contexto evoluído
 
-![](./../images/002-context.png)
+![](../images/003-context.png)
 
 ### Interpretação da evolução
 
