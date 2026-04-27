@@ -6,6 +6,18 @@
 4. [Nível 3 - Component](architectural-modeling-c4-model/04-component.md)
 5. [Nível 4 - Code](architectural-modeling-c4-model/05-code.md)
 
+## Nível 1 - Context
+
+![Context](./images/004-context.png)
+
+## Nível 2 - Container
+
+![Context](./images/005-container.png)
+
+## Nível 3 - Component
+
+## Nível 4 - Code
+
 ## Referência
 
 - [Documentação Oficial do C4 Model](https://c4model.com/)
