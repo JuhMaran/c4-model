@@ -6,5 +6,7 @@
 4. [Nível 3 - Component](architectural-modeling-c4-model/04-component.md)
 5. [Nível 4 - Code](architectural-modeling-c4-model/05-code.md)
 
+## Referência
 
+- [Documentação Oficial do C4 Model](https://c4model.com/)
 
